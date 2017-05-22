@@ -1,0 +1,23 @@
+<div class="col-md-6 column" style="width:10%;height:695px;background-color:#EEEEEE;">
+	<div class="btn-group btn-group-lg btn-group-vertical">
+		 <button class="btn btn-default" type="button">
+		 	<em class="glyphicon glyphicon-align-left">实时查询</em> 
+		 </button> 
+		 <button class="btn btn-default" type="button">
+		 	<em class="glyphicon glyphicon-align-center">报警信息</em> 
+		 </button> 
+		 <button class="btn btn-default" type="button">
+		 	<em class="glyphicon glyphicon-align-right">轨迹查询</em> 
+		 </button> 
+		 <button class="btn btn-default" type="button">
+		 	<em class="glyphicon glyphicon-align-justify">设备管理</em> 
+		 </button>
+	</div>
+</div>
+<div class="col-md-6 column" style="width:90%;height:695px;">
+	<button type="button" class="btn btn-default btn-info">查询</button>
+	<div class="row clearfix">
+		<div class="col-md-12 column" style="height:655px;margin:4px 4px;border-style:dashed;border-width:1px;background-color:#008000;">
+		</div>
+	</div>
+</div>

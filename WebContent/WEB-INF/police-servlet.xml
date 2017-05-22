@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+    xmlns:tx="http://www.springframework.org/schema/tx" xmlns:jdbc="http://www.springframework.org/schema/jdbc"
+    xmlns:task="http://www.springframework.org/schema/task" xmlns:cache="http://www.springframework.org/schema/cache"
+    xmlns:p="http://www.springframework.org/schema/p"
+    xmlns:mvc="http://www.springframework.org/schema/mvc"
+    xsi:schemaLocation="http://www.springframework.org/schema/jdbc http://www.springframework.org/schema/jdbc/spring-jdbc.xsd
+        http://www.springframework.org/schema/task http://www.springframework.org/schema/task/spring-task.xsd
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/cache http://www.springframework.org/schema/cache/spring-cache.xsd
+        http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+        http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd
+        ">
+    <mvc:resources location="/resources/" mapping="/resources/**"/>
+	<mvc:resources location="/js/" mapping="/js/**"/>
+	<mvc:resources location="/css/" mapping="/css/**"/>
+	<mvc:resources location="/fonts/" mapping="/fonts/**"/>
+	<mvc:resources location="/text/" mapping="/text/**"/>
+	<mvc:resources location="/Pictures/" mapping="/Pictures/**"/>
+	<context:component-scan base-package="com.ciii.police.controller" />
+	<mvc:annotation-driven />
+
+	<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<!-- <property name="viewclass" value="org.springframework.web.servlet.view.JetView" /> -->
+		<property name="prefix" value="/WEB-INF/jsp/"></property>
+		<property name="suffix" value=".jsp"></property>
+	</bean>
+	
+	<!-- 设置全局异常显示 -->
+	<bean class="org.springframework.web.servlet.handler.SimpleMappingExceptionResolver">
+		<property name="exceptionMappings">
+			<props>
+				<prop key="com.ciii.police.model.UserException">error</prop>
+				<prop key="java.lang.NullPointException">exception</prop>
+			</props>
+		</property>
+	</bean>
+	
+	<!-- 设置multiparResolver才能文件上传 -->
+	<bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+		<property name="maxUploadSize" value="1000000000"></property>
+	</bean>
+	
+	<!-- 从响应和请求读取/编写字符串 -->
+	<bean id="stringHttpMessage" class="org.springframework.http.converter.StringHttpMessageConverter">
+		<property name="supportedMediaTypes">
+			<list>
+				<value>text/plain;charset=UTF-8</value>
+			</list>
+		</property>
+	</bean>
+	
+	<!-- 用于将对象转化为JSON -->
+	<!-- <bean id="jsonConverter" class="org.springframework.http.converter.json.MappingJacksonHttpMessageConverter"></bean>
+	
+	<bean class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter">
+		<property name="messageConverters">
+			<list>
+				<ref bean="stringHttpMessage" />
+				<ref bean="jsonConverter" />
+			</list>
+		</property>	
+	</bean> -->
+</beans>
+        

@@ -1,0 +1,329 @@
+/*
+* @Author: anchen
+* @Date:   2017-01-04 14:04:43
+* @Last Modified by:   anchen
+* @Last Modified time: 2017-03-22 10:50:43
+*/
+/*去除a标签下划线 开始*/
+        /*a{
+            text-decoration:none;
+        }*/
+        /*去除a标签下划线 结束*/
+        *{
+            padding:0px;
+            margin:0px;
+        }
+            body{
+                background:#1b677b;
+            }
+/*#4b677b*/
+            .top{
+                width:100%;
+                height:100%;
+            }
+
+            .title img{
+                position:relative;
+                margin-top:2px;
+                left:5%;
+                width:50px;
+                height:50px;
+            }
+
+            .title span{
+                position:absolute;
+                top:10px;
+                left:5%;
+                height:40px;
+                width:500px;
+                font-size:30px;
+                line-height:40px;
+                text-align:center;
+                color:white;
+            }
+
+            #navb{
+                width:900px;
+                height:26px;
+                position:absolute;
+                left:5%;
+                top:60px;
+            }
+
+            #navb li{
+                list-style:none;
+                float:left;
+                width:150px;
+                height:46px;
+                font-size:28px;
+                line-height:46px;
+                margin-left:5px;
+                border:1px solid #324964;
+                text-align:center;
+                cursor:pointer;
+                background:#324964;
+                color:white;
+            }
+
+             #navb li:hover{
+                background:white;
+                color:#324964;
+            }
+
+             #navb li:visited{
+                background:white;
+                color:#324964;
+            }
+
+            .topanv{
+                width:100%;
+                height:37px;
+            }
+
+            .navleft input:focus {
+            outline:none;
+            }
+
+            .navleft button{
+                position:absolute;
+                left:1200px;
+                top:60px;
+                background-color:#324964;
+                width:100px;
+                height:36px;
+                color:white;
+                text-align:center;
+                line-height:30px;
+                font-size:24px;
+                border:none;
+            }
+
+            .navleft button:hover{
+                background:#ffffff;
+                color:#5a9cdb;
+            }
+
+            .zhanwei{
+                background:white;
+                height:82%;
+                width:100%;
+                min-width:1300px;
+                position:absolute;
+                left:0%;
+                top:130px;
+                overflow:hidden;
+                /*border: 1px solid gray;*/
+            }
+
+            .btn1{
+                position:absolute;
+                margin-top:185px;
+                left:0%;
+                width:100%;
+                height:90%;
+                overflow-y:scroll;
+            }
+
+            .tablehead{
+                position:absolute;
+                margin-top:135px;
+                left:0%;
+                width:100%;
+                font-size:20px;
+                height:50px;
+                background:#55cdc7;
+            }
+
+            th{
+                width:85px;
+                height:26px;
+                text-align:center;
+                color:black;
+                margin-bottom:30px;
+            }
+
+            td{
+                width:85px;
+                height:26px;
+                text-align:center;
+                color:black;
+                vertical-align:top;
+            }
+
+            td b{
+                padding-top:5px;
+                display:block;
+            }
+
+            button{
+                width:56px;
+                height:22px;
+                background:#69ab3d;
+                margin-top:5px;
+                border-radius:5px;
+            }
+
+            #allmap{
+                width:100%;
+                height:100%;
+                position:absolute;
+                top:0%;
+                left:0%;
+            }
+
+            #allmap1{
+                width:100%;
+                height:90%;
+                position:absolute;
+                top:6%;
+                left:0%;
+            }
+
+             #allmap2{
+                position:absolute;
+                margin-top:1.8%;
+                left:0%;
+                width:100%;
+                height:90%;
+                overflow:hidden;
+            }
+
+            .query{
+                width:100%;
+                height:70%;
+                min-width:1300px;
+                position:absolute;
+                top:120px;
+                left:0%;
+                display:none;
+                background:#f2f2f2;
+            }
+
+            .search2{
+                font-size:20px;
+                color:black;
+                width:1300px;
+                height:50px;
+                position:absolute;
+                left:2%;
+                top:5px;
+            }
+
+            .search2 div{
+                float:left;
+                width:380px;
+                height:38px;
+                line-height:32px;
+                margin-top:22px;
+                margin-left:2px;
+                display:inline;
+            }
+
+            .search2 input{
+                height:30px;
+                font-size:16px;
+                line-height:30px;
+                text-align:center;
+                border:1px solid black;
+                display:inline;
+            }
+
+            .xiala{
+                width:120px;
+                height:32px;
+                line-height:32px;
+                margin-top:22px;
+                margin-left:2px;
+                display:inline;
+            }
+
+            option:hover{
+                background:#55cdc7;
+            }
+
+            .search3{
+                width:410px;
+                height:40px;
+                margin-top:80px;
+                margin-left:5px;
+            }
+            .search3 input{
+                width:126px;
+                height:32px;
+                background-color:#d9e1e7;
+                border-radius:5px;
+                float:left;
+                color:black;
+                line-height:32px;
+                text-align:center;
+                font-size:26px;
+                margin-left:35px;
+            }
+
+             .search3 div:hover{
+                background:#fff;
+             }
+
+            .guiji1{
+                position:absolute;
+                top:120px;
+                left:0%;
+                width:100%;
+                min-width:1200px;
+                height:85%;
+                font-size:16px;
+                color:black;
+                margin-top:3px;
+                background:white;
+            }
+
+            .guiji1 div{
+                float:left;
+                margin-left:20px;
+                margin-top:10px;
+                margin-bottom:10px;
+                color:#4b677b;
+            }
+
+            .guiji1 input{
+                width:244px;
+                height:34px;
+                border:1px black solid;
+            }
+
+            .guiji1 .genzong1{
+                width:210px;
+                height:34px;
+                font-size:20px;
+                color:black;
+                text-align:center;
+                line-height:34px;
+                background-color:#d9e1e7;
+                /*display:block;*/
+                position:absolute;
+               /* left:1100px;*/
+            }
+
+            .guiji1 .genzong2{
+                width:210px;
+                height:34px;
+                font-size:20px;
+                color:black;
+                text-align:center;
+                line-height:34px;
+                background-color:#d9e1e7;
+                /*display:block;*/
+                position:absolute;
+                /*left:1000px;*/
+            }
+
+            .guiji1 span:hover{
+                background:#fff;
+            }
+
+            .guiji1 span:active{
+                background:#fff;
+            }
+
+
+
